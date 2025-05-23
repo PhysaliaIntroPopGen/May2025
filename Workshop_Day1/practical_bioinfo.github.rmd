@@ -11,8 +11,8 @@ IMPORTANT: Please note that there is no universal pipeline that works for all se
 ### Opening an SSH connection on a remote server
 To connect to a remote server using SSH, open your terminal and use the following command:
 ssh username@hostname
-To connect on the physalia cluster, we should also provide a certificate (a key for the cybersecurity), use provided by the Physalia-course team. For example, if you are "user2", you will only need to provide the c2.pem certificate. 
-chmod 600 popgen.pem 
+To connect on the physalia cluster, we should also provide a certificate (a key for the cybersecurity), use provided by the Physalia-course team. For example, if you are "user2", you will only need to provide the "c2.pem" certificate. 
+chmod 600 c2.pem 
 To connect on the server, then use the following command (if you are "user2" of course, if you are another user, adjust the command accordingly):  
 ssh -i c2.pem user2@[hostname]
 NOTE: The hostname of the Physalia machine changes daily. The machine's ID address will be provided separately via Slack.
