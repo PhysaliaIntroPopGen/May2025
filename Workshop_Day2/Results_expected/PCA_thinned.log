@@ -1,0 +1,31 @@
+PLINK v1.90b6.21 64-bit (19 Oct 2020)
+Options in effect:
+  --allow-extra-chr
+  --double-id
+  --out ../Results/PCA_thinned
+  --pca
+  --vcf thinned_subset_Flowers_2019.recode.vcf
+
+Hostname: ip-172-31-5-181
+Working directory: /home/ubuntu/Workshops_TL_YB_PopGen/Dataset
+Start time: Fri Nov 22 14:42:51 2024
+
+Random number seed: 1732286571
+16007 MB RAM detected; reserving 8003 MB for main workspace.
+--vcf: ../Results/PCA_thinned-temporary.bed +
+../Results/PCA_thinned-temporary.bim + ../Results/PCA_thinned-temporary.fam
+written.
+1282 variants loaded from .bim file.
+105 people (0 males, 0 females, 105 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to ../Results/PCA_thinned.nosex .
+Using up to 4 threads (change this with --threads).
+Before main variant filters, 105 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.987245.
+1282 variants and 105 people pass filters and QC.
+Note: No phenotypes present.
+Relationship matrix calculation complete.
+--pca: Results saved to ../Results/PCA_thinned.eigenval and
+../Results/PCA_thinned.eigenvec .
+
+End time: Fri Nov 22 14:42:52 2024

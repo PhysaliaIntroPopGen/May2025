@@ -1,0 +1,9 @@
+branch	branch_descendants	Outgroup	canariensis	theophrasti	sylvestris	dacty_NAfr	dacty_ME
+b2	canariensis	nan	nan	nan	nan	nan	nan
+b3	theophrasti,sylvestris,dacty_NAfr,dacty_ME	nan	nan	nan	nan	nan	nan
+b4	theophrasti	nan	0	nan	nan	nan	nan
+b5	sylvestris,dacty_NAfr,dacty_ME	nan	0	nan	nan	nan	nan
+b6	dacty_NAfr,dacty_ME	nan	0	0	nan	nan	nan
+b7	sylvestris	nan	0	0	nan	nan	nan
+b8	dacty_NAfr	nan	0	0.20258	0	nan	nan
+b9	dacty_ME	nan	0	0	0.108584	nan	nan
