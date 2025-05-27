@@ -1,7 +1,7 @@
 # Physalia-course: Population genomics
 Thibault Leroy (thibault.leroy@inrae.fr)
 
-## Part 3: Introduction to demographic modellingMay 26, 2025 
+## Part 3: Introduction to demographic modelling - May 26, 2025 
 
 ### General context & dataset
 Demographic modelling is a powerful approach to reconstruct the evolutionary history of populations, such as changes in population size, migration patterns, and divergence times. Leveraging large-scale genomic datasets enhances the accuracy and resolution of such analyses, providing insights into complex population dynamics. However, it is important to remember that these analyses rely on simplified representations of reality. Consequently, results from demographic modelling should be interpreted with caution. As George Box famously noted, “All models are wrong, but some are useful. However, the approximate nature of the model must always be borne in mind. Applied to demographic modelling with population genomics data, this means that no model can fully capture the exact real demographic history. The goal is to approximate reality as closely as possible, providing a useful framework for understanding evolutionary processes, therefore providing a window into the past.
