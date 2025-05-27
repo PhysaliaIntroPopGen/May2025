@@ -100,9 +100,7 @@ cd ~/Day1_bioinfo/data-oak/Raw-data/
 for j in ERR3284869 ERR3284873 ERR3284898; do
 		 acc=$(echo "./$j")
 		 outacc=$(echo "../Trimming/$j")
-		 trimmomatic PE -threads 1 -phred33 "$acc"_1.subset.fastq.gz "$acc"_2.subset.fastq.gz "$outacc"_1.cleaned.subset.fastq.gz "$outacc"_1.cleaned_unpaired.subset.fastq.gz "$outacc"_2.cleaned.subset.fastq.gz "$outacc"_2.cleaned_unpaired.subset.fastq.gz \
-ILLUMINACLIP:/home/ubuntu/miniconda3/envs/Workshop_TL_YB_Calling/share/trimmomatic/adapters/
-TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:50
+		 trimmomatic PE -threads 1 -phred33 "$acc"_1.subset.fastq.gz "$acc"_2.subset.fastq.gz "$outacc"_1.cleaned.subset.fastq.gz "$outacc"_1.cleaned_unpaired.subset.fastq.gz "$outacc"_2.cleaned.subset.fastq.gz "$outacc"_2.cleaned_unpaired.subset.fastq.gz ILLUMINACLIP:/home/ubuntu/miniconda3/envs/Workshop_TL_YB_Calling/share/trimmomatic/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:50
 done
 Note: The script is designed to save the results in a Trimming directory. Therefore, ensure you already have a Trimming directory in the data-oak directory (normally yes, but if not, please create it with the mkdir command: "mkdir Trimming"). Additionally, remember to navigate between directories using "cd [DIRECTORY]" (e.g. cd Trimming) to enter a folder, and "cd .." to move up one level in the directory structure! 
 
@@ -287,7 +285,7 @@ The second step below involves using CombineGVCFs to merge the individual GVCF f
 gatk CombineGVCFs -R $REFERENCE \
 	 --variant ./Calling/subset_Dayri.g.vcf.gz \
 	 --variant ./Calling/subset_Halawy.g.vcf.gz \
-	 --variant ./Cls -lrtalling/subset_Hayany.g.vcf.gz \
+	 --variant ./Calling/subset_Hayany.g.vcf.gz \
 	 --variant ./Calling/subset_Khisab.g.vcf.gz \
 	 --variant ./Calling/subset_Medjool.g.vcf.gz \
 -O ./Calling/datepalm.combine.NC_052395.1.g.vcf.gz
