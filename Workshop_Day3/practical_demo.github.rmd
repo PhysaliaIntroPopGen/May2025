@@ -88,7 +88,7 @@ mkdir ./Calling/PdactyliferaMe ./Calling/PdactyliferaNAfr ./Calling/Ptheophrasti
 grep "#" ./Calling/Flowers_et_al_2019.SNPs.bialleliconly.tronq.vcf > ./Calling/Flowers_et_al_2019.SNPs.bialleliconly.vcf.header
 while read line; do
 		 grep "$line" ./Calling/Flowers_et_al_2019.SNPs.bialleliconly.tronq.vcf | grep -v "#"> ./Calling/Flowers_et_al_2019.SNPs.bialleliconly.$line.vcf.1
-		  cat ./Calling/Flowers_et_al_2019.SNPs.bialleliconly.vcf.header ./Calling/Flowers_et_al_2019.SNPs.bialleliconly.$line.vcf.1 > ./Calling/Flowers_et_al_2019.SNPs.bialleliconly.$line.vcf
+		cat ./Calling/Flowers_et_al_2019.SNPs.bialleliconly.vcf.header ./Calling/Flowers_et_al_2019.SNPs.bialleliconly.$line.vcf.1 > ./Calling/Flowers_et_al_2019.SNPs.bialleliconly.$line.vcf
 		 rm ./Calling/Flowers_et_al_2019.SNPs.bialleliconly.$line.vcf.1
 		 rm ./Calling/Flowers_et_al_2019.SNPs.bialleliconly.$line.vcf.gz
 		 bgzip ./Calling/Flowers_et_al_2019.SNPs.bialleliconly.$line.vcf
